@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-17T03:58:49.427Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="XbibS8PNLZb2eCl5S5v4" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-17T08:07:19.497Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.192 Safari/537.36" etag="wmKBRyv1Ym8AeU0y7sgN" version="14.4.7" type="github">
   <diagram id="LrhNRJhGLsuiSvbLeXJM" name="Page-1">
     <mxGraphModel dx="1426" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="2500" math="0" shadow="0">
       <root>
@@ -313,7 +313,7 @@
         <mxCell id="1AW58vUxaduGNzrUOGj8-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-48" target="1AW58vUxaduGNzrUOGj8-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="1AW58vUxaduGNzrUOGj8-50" value="&lt;pre style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 9pt&quot;&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;AllocateTaskService拉&lt;/span&gt;&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-49">
+        <mxCell id="1AW58vUxaduGNzrUOGj8-50" value="&lt;pre style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 9pt&quot;&gt;&lt;span style=&quot;font-size: 9pt&quot;&gt;AllocateTaskService拉&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 9pt&quot;&gt;并更新需要执行任务的node信息&lt;/pre&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-49">
           <mxGeometry x="0.04" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -321,26 +321,49 @@
         <mxCell id="1AW58vUxaduGNzrUOGj8-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.436;entryY=1.04;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-48" target="1AW58vUxaduGNzrUOGj8-53">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-48" target="1AW58vUxaduGNzrUOGj8-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-61" value="调AgentController&lt;br&gt;启动node工作任务" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-60">
+          <mxGeometry x="-0.0286" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="1AW58vUxaduGNzrUOGj8-48" value="Master工作任务调度" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="810" y="1620" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="1AW58vUxaduGNzrUOGj8-53" value="节点工作任务&lt;br&gt;dts_task" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="740" y="1520" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="1AW58vUxaduGNzrUOGj8-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.492;entryY=1.013;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.96;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-48" target="1AW58vUxaduGNzrUOGj8-48">
+        <mxCell id="1AW58vUxaduGNzrUOGj8-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.8;entryY=0.8;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.917;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-48" target="1AW58vUxaduGNzrUOGj8-48">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
+              <mxPoint x="925" y="1648" />
               <mxPoint x="925" y="1620" />
               <mxPoint x="1010" y="1620" />
               <mxPoint x="1010" y="1720" />
-              <mxPoint x="869" y="1720" />
+              <mxPoint x="906" y="1720" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1AW58vUxaduGNzrUOGj8-58" value="&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 9pt&quot;&gt;TaskScheduler改工作任务状态&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-57">
+        <mxCell id="1AW58vUxaduGNzrUOGj8-58" value="&lt;span style=&quot;font-family: &amp;#34;menlo&amp;#34; ; font-size: 9pt&quot;&gt;TaskScheduler推进工作任务状态&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-57">
           <mxGeometry x="-0.0034" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1AW58vUxaduGNzrUOGj8-59" target="1AW58vUxaduGNzrUOGj8-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-64" value="新开进程调内核" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1AW58vUxaduGNzrUOGj8-63">
+          <mxGeometry x="-0.36" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-59" value="node执行任务" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1780" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1AW58vUxaduGNzrUOGj8-62" value="任务执行状态" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="745" y="1910" width="110" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
